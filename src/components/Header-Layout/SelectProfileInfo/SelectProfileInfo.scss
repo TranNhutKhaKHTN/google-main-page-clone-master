@@ -1,0 +1,111 @@
+@import "../../../css/constants/constants.scss";
+@import "../../../css/mixin/mixin.scss";
+
+$width: 85%;
+
+.select-profile-info-container-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    @include flex-center();
+    .select-profile-info-container-buffer {
+        background-color: white;
+        width: 65%;
+        // height: 82%;
+        min-width: 510px;
+        min-height: 320px;
+        border: 1px solid #aaa;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        .header {
+            height: 20px;
+            padding: 17px 20px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            .title-select-profile-info-container {
+                display: inline-block;
+                font-size: 20px;
+                vertical-align: top;
+            }
+            .close-button {
+                line-height: 0;
+                overflow: hidden;
+                position: absolute;
+                right: 11px;
+                top: 20px;
+                .close {
+                    font-size: 16px;
+                    margin: 0;
+                    cursor: pointer;
+                    &:hover .close-icon {
+                        color: rgb(107, 107, 107);
+                    }
+                }
+            }
+        }
+        .select-status-container {
+            top: 54px;
+            border-top: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            height: 51px;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #e1e1e1;
+            .status {
+                height: 50px;
+                cursor: pointer;
+                @include flex-center();
+                margin: 0 18px;
+                padding: 16px 4px 7px;
+                font-family: "Roboto", Arial, sans-serif;
+                font-size: 14px;
+                &:hover {
+                    border-bottom: 2px solid #4d90fe;
+                    border-left: 0;
+                    border-right: 0;
+                    border-top: 0;
+                    padding-bottom: 5px;
+                }
+
+                &.active {
+                    font-weight: bold;
+                    border-bottom: 2px solid #4d90fe;
+                    border-left: 0;
+                    border-right: 0;
+                    border-top: 0;
+                    box-sizing: border-box;
+                    outline: none;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        .choose-photos-component-container {
+            // border: 2px solid red;
+            position: absolute;
+            top: 104px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 69.2%;
+            overflow: hidden;
+        }
+        .footer-container {
+            height: 69px;
+            background-color: #fff;
+            border-top: 1px solid #e5e5e5;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

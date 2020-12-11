@@ -1,0 +1,93 @@
+@import "../../css/constants/constants.scss";
+@import "../../css/mixin/mixin.scss";
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: $height-header;
+    align-items: center;
+    padding: 5px auto;
+    position: relative;
+    z-index: 1;
+    .header-item {
+        height: 100%;
+        margin: auto 8px;
+        @include flex-center();
+
+        a {
+            text-decoration: none;
+            font-size: 13px;
+            font-style: normal;
+            line-height: 24px;
+            font-weight: 400;
+            font-family: arial, sans-serif;
+            // color: rgba(0, 0, 0, 0.87);
+            color: white;
+
+            &:hover {
+                text-decoration: underline;
+                // color: rgb(121, 121, 115);
+                color: rgb(238, 230, 230);
+            }
+        }
+    }
+    .container-google-apps-expand-icon {
+        margin: 0 2px;
+        @include flex-center();
+        padding: 4px;
+        .google-apps-round {
+            @include flex-center();
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            transition: $quick-transition;
+
+            &:hover {
+                background-color: #ffffff1a;
+            }
+            @include title-hover(-50%);
+            .image-container {
+                background-image: url("../../images/svg-file/google-apps.svg");
+                background-size: initial;
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 22px;
+                color: green($color: #000000);
+            }
+        }
+    }
+    .container-google-account-expand-icon {
+        margin: 0 6px 0 4px;
+        @include flex-center();
+        padding: 4px;
+
+        .google-account-round {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            @include flex-center();
+            position: relative;
+            transition: $quick-transition;
+
+            &:hover {
+                background-color: #ffffff1a;
+            }
+
+            @include title-hover(-300%);
+
+            .image-container {
+                background-image: url("https://lh3.googleusercontent.com/-A1lUXyyCP7Q/XhDIuG5FAHI/AAAAAAAAC20/uNbfoAqTnKYdAY3WF42C5sq3YL6I-2w9gCEwYBhgLKtQDAL1OcqzKVV_kKgBTm3vpxFz1HncCRUz3o9Ou4Ih37qxMVawHhKfWTbFQIbVoEXJK50W0Hp4cYhC0t95I9SvxMCjJMYdbaQAUpNdwC9RO-iA-pP-JvS0dtbFPYG_6Z90XCBh5-yxTObMrzY4M9pMplIgwJPw2eH_09TA2iYOruCcbUrM98auu2vfMvN3UN825cM5BI9RGy-hkKgTr6dVhxbZw_yyaVcWspEZMmw1niR-F2OgmDLG-QSUqHOunGxz_-ZnLMi2MOQXhmNRO0WXHyQp2o1UfCEbYBUnCsHMTs7weJ7_AGY0Vq6y2Z3yr6VKqrdo0RAUjPNe_lKMms-_1pRHOin6kb_KLYE_urK4sbI0sOKS23xLcslJoUBz9rQ04u2n0oDCN0--Ze57stw4q8LP2huVBeXoMrkffn4In3MAwHpYGdJIcRLGRSok5t_u-jowauIH-PoD8Y7VpWugYpjMluq5X_cfCUT7HoCCUrECVl--vSWmKWUe-t0XO0C_QBEoJhrOUBKiJ81pnooSiZDaBAfdJysBIoqt_Pv_38SM0SiLZtx_VMaXECldGkaC9XmXGmqJ774JcXuFLZwstsKOI59awIC1D2yfwbEuORB7A8vKcMI7TiP0F/w139-h140-p/2020-01-04.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                color: green($color: #000000);
+                border-radius: 50%;
+            }
+        }
+    }
+}

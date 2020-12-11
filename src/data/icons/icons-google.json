@@ -1,0 +1,132 @@
+{
+    "google-icon-link": "https://ssl.gstatic.com/gb/images/p1_5df01b81.png",
+    "account-icon": {
+        "name": "Account",
+        "url": "https://lh3.googleusercontent.com/-A1lUXyyCP7Q/XhDIuG5FAHI/AAAAAAAAC20/uNbfoAqTnKYdAY3WF42C5sq3YL6I-2w9gCEwYBhgLKtQDAL1OcqzKVV_kKgBTm3vpxFz1HncCRUz3o9Ou4Ih37qxMVawHhKfWTbFQIbVoEXJK50W0Hp4cYhC0t95I9SvxMCjJMYdbaQAUpNdwC9RO-iA-pP-JvS0dtbFPYG_6Z90XCBh5-yxTObMrzY4M9pMplIgwJPw2eH_09TA2iYOruCcbUrM98auu2vfMvN3UN825cM5BI9RGy-hkKgTr6dVhxbZw_yyaVcWspEZMmw1niR-F2OgmDLG-QSUqHOunGxz_-ZnLMi2MOQXhmNRO0WXHyQp2o1UfCEbYBUnCsHMTs7weJ7_AGY0Vq6y2Z3yr6VKqrdo0RAUjPNe_lKMms-_1pRHOin6kb_KLYE_urK4sbI0sOKS23xLcslJoUBz9rQ04u2n0oDCN0--Ze57stw4q8LP2huVBeXoMrkffn4In3MAwHpYGdJIcRLGRSok5t_u-jowauIH-PoD8Y7VpWugYpjMluq5X_cfCUT7HoCCUrECVl--vSWmKWUe-t0XO0C_QBEoJhrOUBKiJ81pnooSiZDaBAfdJysBIoqt_Pv_38SM0SiLZtx_VMaXECldGkaC9XmXGmqJ774JcXuFLZwstsKOI59awIC1D2yfwbEuORB7A8vKcMI7TiP0F/w139-h140-p/2020-01-04.jpg",
+        "link": "https://myaccount.google.com/"
+    },
+    "latitude-google-icons-group-1": [
+        {
+            "name": "Search",
+            "height": "690",
+            "link": "https://www.google.com.vn/"
+        },
+        {
+            "name": "Youtube",
+            "height": "1863",
+            "link": "https://www.youtube.com/"
+        },
+        {
+            "name": "Translate",
+            "height": "828",
+            "link": "https://translate.google.com.vn/"
+        },
+        {
+            "name": "Gmail",
+            "height": "1449",
+            "link": "https://mail.google.com/"
+        },
+        {
+            "name": "Contacts",
+            "height": "1518",
+            "link": "https://contacts.google.com/"
+        },
+        {
+            "name": "Drive",
+            "height": "1380",
+            "link": "https://drive.google.com/"
+        },
+        {
+            "name": "Calendar",
+            "height": "2829",
+            "link": "https://calendar.google.com/"
+        },
+        {
+            "name": "Photos",
+            "height": "2760",
+            "link": "https://photos.google.com/"
+        },
+        {
+            "name": "Dou",
+            "height": "2346",
+            "link": "https://duo.google.com/"
+        },
+        {
+            "name": "Meet",
+            "height": "2001",
+            "link": "https://meet.google.com/"
+        },
+        {
+            "name": "News",
+            "height": "414",
+            "link": "https://news.google.com/"
+        },
+        {
+            "name": "Play",
+            "height": "1035",
+            "link": "https://play.google.com/"
+        }
+    ],
+    "latitude-google-icons-group-2": [
+        {
+            "name": "Docs",
+            "height": "2622",
+            "link": "https://docs.google.com/"
+        },
+        {
+            "name": "Hangouts",
+            "height": "1794",
+            "link": "https://hangouts.google.com/"
+        },
+        {
+            "name": "Keep",
+            "height": "897",
+            "link": "https://keep.google.com/"
+        },
+        {
+            "name": "Jamboard",
+            "height": "1932",
+            "link": "https://jamboard.google.com/"
+        },
+        {
+            "name": "Classroom",
+            "height": "2553",
+            "link": "https://classroom.google.com/"
+        },
+        {
+            "name": "Earth",
+            "height": "2277",
+            "link": "https://earth.google.com/"
+        },
+        {
+            "name": "Collections",
+            "height": "759",
+            "link": "https://www.google.com.vn/save?authuser=0"
+        },
+        {
+            "name": "Sheets",
+            "height": "276",
+            "link": "https://docs.google.com/spreadsheets/u/0/"
+        },
+        {
+            "name": "Slides",
+            "height": "1242",
+            "link": "https://docs.google.com/presentation/u/0/"
+        },
+        {
+            "name": "Arts and Culture",
+            "height": "1173",
+            "link": "https://artsandculture.google.com/?hl=en-GB"
+        },
+        {
+            "name": "Google Ads",
+            "height": "552",
+            "link": "https://ads.google.com/"
+        },
+        {
+            "name": "Podcasts",
+            "height": "1311",
+            "link": "https://podcasts.google.com"
+        }
+    ]
+}

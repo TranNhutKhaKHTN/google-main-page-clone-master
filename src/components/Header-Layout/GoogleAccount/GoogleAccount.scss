@@ -1,0 +1,145 @@
+@import "../../../css/constants/constants.scss";
+
+.container-google-account-container {
+    max-height: 467px;
+    width: 354px;
+    margin-left: 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    right: 14px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: $height-header;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #8b8b8ba1;
+        border-radius: 8px;
+        height: 20px;
+    }
+    .avatar {
+        // border: 1px solid red;
+        margin: 20px 33px;
+        white-space: nowrap;
+        text-align: center;
+        .avatar-container {
+            margin-left: 101px;
+            // margin-right: 101px;
+            margin-bottom: 10px;
+            position: relative;
+            height: 86px;
+            width: 86px;
+            display: block;
+            .img-fluid {
+                height: 80px;
+                width: 80px;
+                margin-right: 3px;
+                border-radius: 50%;
+            }
+            .camera-container {
+                // border: 1px solid red;
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                background-color: #fff;
+                bottom: 0px;
+                right: 0px;
+                position: absolute;
+                overflow: visible;
+                .camera-setting-avatar {
+                    transition: 0.2s all linear;
+                    font-size: 18px;
+                    color: #323335;
+                    opacity: 1;
+                    &:hover {
+                        cursor: pointer;
+                        color: rgb(8, 92, 248);
+                    }
+                }
+            }
+        }
+        .info-account {
+            display: block;
+            text-align: center;
+            .name-account {
+                color: #202124;
+                font-style: bold;
+                font-variant-ligatures: normal;
+                font-variant-caps: normal;
+                font-variant-numeric: normal;
+                font-variant-east-asian: normal;
+                font-weight: 500;
+                font-stretch: normal;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.29px;
+                margin: 0;
+                text-align: center;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .email-account {
+                color: #5f6368;
+                font-style: normal;
+                font-variant-ligatures: normal;
+                font-variant-caps: normal;
+                font-variant-numeric: normal;
+                font-variant-east-asian: normal;
+                font-weight: 400;
+                font-stretch: normal;
+                font-size: 15px;
+                line-height: 19px;
+                letter-spacing: normal;
+                text-align: center;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .manage-account {
+                background-color: #ffffff;
+                border: 1px solid #dadce0;
+                border-radius: 100px;
+                color: #3c4043;
+                display: inline-block;
+                font-style: normal;
+                font-variant-ligatures: normal;
+                font-variant-caps: normal;
+                font-variant-numeric: normal;
+                font-variant-east-asian: normal;
+                font-weight: 500;
+                font-stretch: normal;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.25px;
+                margin: 16px 0 0;
+                max-width: 254px;
+                outline: 0;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                a {
+                    color: #3c4043;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.background-option-specific-option-container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+
+    .background-option-specific-option-buffer {
+        // border: 1px solid brown;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        .option-container {
+            width: 176px;
+            height: 176px;
+            border-radius: 4px;
+            background-color: #373b41;
+            overflow: hidden;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+            }
+
+            .choose-icon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 5px;
+                right: 5px;
+                // border: 1px solid white;
+                color: rgb(44, 39, 39);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+                background-color: rgb(175, 192, 228);
+                font-weight: 600;
+            }
+        }
+    }
+}

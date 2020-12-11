@@ -1,0 +1,33 @@
+.footer-google-account-container {
+    color: #5f6368;
+    margin: 14px 33px;
+    white-space: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+
+    a {
+        border-radius: 4px;
+        color: #5f6368;
+        display: inline-block;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: 400;
+        font-stretch: normal;
+        font-size: 12px;
+        line-height: 16px;
+        outline: 0;
+        padding: 4px 8px;
+        text-decoration: none;
+        text-align: center;
+        white-space: normal;
+        &:hover {
+            text-decoration: none;
+            color: #525558;
+        }
+    }
+}

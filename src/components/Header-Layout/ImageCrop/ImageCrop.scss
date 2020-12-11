@@ -1,0 +1,82 @@
+.image-crop-container {
+    width: 100%;
+    height: 100%;
+
+    .image-crop-gallery {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .gallery {
+            margin-top: 0;
+            height: 80%;
+            width: auto;
+            // border: 1px solid drown;
+            display: block;
+
+            & > div {
+                // border: 1px solid rgb(255, 0, 0);
+                .cropper-container {
+                    height: 100% !important;
+                    width: auto !important;
+                    position: relative;
+                    // border: 5px solid rgb(85, 0, 255);
+
+                    &.cropper-bg {
+                        // background-image: none;
+                    }
+
+                    .cropper-drag-box {
+                        position: absolute !important;
+                        top: 0 !important;
+                        bottom: 0 !important;
+                        right: 0 !important;
+                        left: 0 !important;
+                        display: block !important;
+                    }
+
+                    .cropper-wrap-box {
+                        // border: 3px solid rgb(10, 255, 2);
+                        overflow: visible !important;
+                        position: relative !important;
+                        width: auto;
+                        height: 100%;
+                        .cropper-canvas {
+                            position: relative;
+                            // width: 100% !important;
+                            width: auto !important;
+                            height: 100% !important;
+                            transform: none !important;
+                            // border: 3px solid rgb(255, 208, 0);
+                            overflow: visible !important;
+                            display: flex;
+                            .cropper-hide {
+                                position: relative !important;
+                                display: block;
+                                height: 100% !important;
+                                width: auto !important;
+                                margin: 0 !important;
+                                // border: 3px solid rgb(204, 0, 255);
+                            }
+                        }
+                    }
+
+                    .cropper-crop-box {
+                        .cropper-view-box {
+                            // overflow: visible;
+
+                            img {
+                                // display: none;
+                                margin: 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

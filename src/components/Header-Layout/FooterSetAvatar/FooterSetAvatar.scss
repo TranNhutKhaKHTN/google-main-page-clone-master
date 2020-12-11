@@ -1,0 +1,42 @@
+.footer-set-avatar {
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center;
+    margin: 0 20px;
+    .button {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        border-radius: 2px;
+        cursor: default;
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+        margin-right: 16px;
+        height: 27px;
+        line-height: 27px;
+        min-width: 54px;
+        outline: 0;
+        padding: 0 8px;
+        &.set-button {
+            opacity: 0.5;
+            background-color: #4d90fe;
+            color: white;
+            border: 1px solid #3079ed;
+        }
+        &.active {
+            background-color: rgb(27, 88, 255);
+            opacity: 1;
+            border: 1px solid #3079ed;
+            color: white;
+        }
+    }
+    .cancel-button {
+        color: #444;
+    }
+}

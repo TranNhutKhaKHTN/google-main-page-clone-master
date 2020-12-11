@@ -1,0 +1,72 @@
+@import "../constants/constants.scss";
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin visiable-container($column-count: 5, $row-count: 2) {
+    $content-width: calc(var($column-count) * var($title-size) + 1px);
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(var($row-count) * 128px);
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 3px;
+    transition: opacity 300ms ease-in-out;
+    width: calc(var($content-width) + 12px);
+}
+
+@mixin title-hover($leftAlign) {
+    &:hover::after {
+        opacity: 1;
+        transition: all 0.1s ease 0.5s;
+        visibility: visible;
+    }
+    &::after {
+        content: attr(data-title);
+        font-size: 13px;
+        position: absolute;
+        bottom: -2.5em;
+        left: $leftAlign;
+        padding: 4px 6px;
+        color: #666;
+        white-space: nowrap;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 4px #666;
+        -webkit-box-shadow: 0px 0px 4px #666;
+        box-shadow: 0px 0px 4px #666;
+        background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0, #f0eded),
+            color-stop(1, #bfbdbd)
+        );
+        background-image: -webkit-linear-gradient(top, #f0eded, #bfbdbd);
+        background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
+        background-image: -ms-linear-gradient(top, #f0eded, #bfbdbd);
+        background-image: -o-linear-gradient(top, #f0eded, #bfbdbd);
+        opacity: 0;
+        z-index: 99999;
+        visibility: hidden;
+    }
+}
+
+@mixin font-text-style {
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: normal;
+}

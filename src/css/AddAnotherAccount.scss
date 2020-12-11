@@ -1,0 +1,40 @@
+.add-another-account-container {
+    // border: 1px solid #ccc;
+    .add-another-account {
+        background-color: #ffffff;
+        color: #3c4043;
+        display: table;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: 500;
+        font-stretch: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.25px;
+        outline: 0;
+        padding: 14px 41px;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        &:hover {
+            cursor: pointer;
+        }
+        .add-another-account-buffer {
+            border: none;
+            display: table-cell;
+            vertical-align: middle;
+            height: 20px;
+            width: 20px;
+        }
+        .add-another-account-text {
+            display: table-cell;
+            padding: 0 74px 0 16px;
+            text-align: left;
+            vertical-align: middle;
+            white-space: normal;
+        }
+    }
+}

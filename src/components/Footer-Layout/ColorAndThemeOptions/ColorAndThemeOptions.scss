@@ -1,0 +1,84 @@
+.color-and-theme-options-container {
+    //   border: 1px solid white;
+    width: 100%;
+    height: 100%;
+
+    .color-and-theme-options-buffer {
+        // border: 1px solid brown;
+        width: 100%;
+        height: 100%;
+        .container-fluid {
+            //   border: 1px solid blue;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+
+            .row {
+                // border: 1px solid yellow;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+
+                .col-2 {
+                    //   border: 1px solid rgb(182, 115, 14);
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .item-color-buffer {
+                        // border: 1px solid blue;
+                        width: 66px;
+                        height: 66px;
+                        border-radius: 50%;
+                        // background-color: rgb(75, 110, 224);
+                        cursor: pointer;
+
+                        .color-image-container {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            //   border: 1px solid black;
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .symbol-icon {
+                                // border: 1px solid black;
+                                visibility: hidden;
+                                &.active {
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    top: 0;
+                                    right: 0;
+                                    background-color: black;
+                                    border-radius: 50%;
+                                    visibility: visible;
+                                    .mask-image {
+                                        //   border: 1px solid white;
+                                        width: 100%;
+                                        height: 100%;
+                                        -webkit-mask-repeat: no-repeat;
+                                        -webkit-mask-size: cover;
+                                        background-color: rgb(69, 167, 212);
+                                    }
+                                }
+                            }
+
+                            img {
+                                margin-top: 1px;
+                                width: 100%;
+                                border-radius: 50%;
+                                cursor: pointer;
+
+                                &.active {
+                                    border: 3px solid rgb(90, 195, 202);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

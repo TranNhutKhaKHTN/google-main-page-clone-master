@@ -1,0 +1,135 @@
+@import "../../../css/constants/constants.scss";
+
+.container-google-apps-container {
+    border: 0.3px solid rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: $height-header;
+    right: 14px;
+    max-height: 460px;
+    width: 300px;
+    padding: 8px 0 0 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: context-menu;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #8b8b8ba1;
+        border-radius: 8px;
+        height: 20px;
+    }
+
+    .google-apps-group {
+        width: 100%;
+        margin: 15px auto;
+
+        .google-app-item {
+            height: 96px;
+            display: flex;
+            padding: 6px;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            .image-account {
+                width: 54px;
+                height: 54px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.2s all linear;
+                &:hover {
+                    filter: brightness(1.1);
+                    transform: scale(1.005);
+                }
+            }
+
+            .image-icon {
+                width: 54px;
+                height: 54px;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                cursor: pointer;
+                transition: 0.2s all linear;
+                &:hover {
+                    filter: brightness(1.1);
+                    transform: scale(1.05);
+                }
+            }
+
+            .space-hidden {
+                height: 10px;
+                width: 100%;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                background-color: transparent;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .name-icon {
+                display: inline-block;
+                font-family: arial, sans-serif;
+                font-size: 14px;
+                line-height: 18px;
+                color: black;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 76px;
+                text-align: center;
+                justify-content: center;
+                &:hover {
+                    height: 35.2px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    white-space: normal;
+                    position: absolute;
+                    bottom: -9px;
+                }
+            }
+        }
+    }
+
+    .more-from-google {
+        padding: 10px 40px;
+        margin-bottom: 16px;
+
+        .buffer-more {
+            border: 0.5px solid rgb(194, 194, 194);
+            padding: 5px 30px;
+            border-radius: 4px;
+            color: #007bff;
+            cursor: pointer;
+
+            a {
+                font-size: 15px;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                    color: #007bff;
+                }
+            }
+        }
+    }
+}

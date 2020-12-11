@@ -1,0 +1,19 @@
+.background-specific-options-container {
+    // border: 1px solid blue;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    .background-specific-options-buffer {
+        .container-fluid {
+            .row {
+                .col-4 {
+                    //   border: 1px solid yellow;
+                    height: 176px;
+                    width: 176px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.account-item-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    border-top: 1px solid #e8eaed;
+    cursor: pointer;
+    outline: 0;
+    padding: 12px 33px 13px;
+    &:hover {
+        text-decoration: none;
+    }
+    .account-item-avatar-container {
+        border: none;
+        vertical-align: top;
+        height: 32px;
+        width: 32px;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .account-item-info-container {
+        width: 244px;
+        flex-grow: 1;
+        margin: 0 0 0 12px;
+        display: inline-block;
+        white-space: nowrap;
+        .account-item-info-name {
+            color: #3c4043;
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-variant-numeric: normal;
+            font-variant-east-asian: normal;
+            font-weight: 500;
+            font-stretch: normal;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.25px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .account-item-info-email {
+            color: #5f6368;
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-variant-numeric: normal;
+            font-variant-east-asian: normal;
+            font-weight: 400;
+            font-stretch: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}

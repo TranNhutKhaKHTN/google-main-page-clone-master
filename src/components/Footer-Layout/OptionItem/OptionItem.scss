@@ -1,0 +1,52 @@
+.option-item-container {
+    color: white;
+    height: 50px;
+    .option-item-buffer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 0 16px 16px 0;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        font-family: "Roboto", arial, sans-serif;
+        font-size: 14px;
+        height: 32px;
+        outline: none;
+        width: 192px;
+        &.active {
+            background-color: rgba(66, 66, 66, 0.74);
+            color: rgb(119, 151, 255);
+        }
+        &:hover {
+            background-color: rgba(66, 66, 66, 0.74);
+        }
+        .option-icon {
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        .option-name {
+            flex-grow: 2;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: "Roboto", arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-variant-numeric: normal;
+            font-variant-east-asian: normal;
+            font-weight: 400;
+        }
+    }
+}
